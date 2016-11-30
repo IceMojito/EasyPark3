@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <org.osmdroid.views.MapView android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEZNAM"
+        android:id="@+id/buttonSeznam"
+        android:onClick="activitylist"
+        />
+    <Button
+        android:layout_alignBottom="@+id/buttonSeznam"
+        android:layout_toRightOf="@+id/buttonSeznam"
+        android:layout_toEndOf="@+id/buttonSeznam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OSVEŽI"
+        android:id="@+id/buttonRefresh"
+        android:onClick="activityrefresh"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POT"
+        android:id="@+id/buttonGoTo"
+        android:onClick="activitygoto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>

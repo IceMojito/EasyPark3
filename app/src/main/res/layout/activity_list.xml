@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mojito.easypark3.ListActivityC">
+
+    />
+
+    <RelativeLayout
+        android:id="@+id/firstrow"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageButton
+            android:layout_toRightOf="@+id/buttonSeznam"
+            android:layout_alignTop="@+id/buttonSortABC"
+            android:layout_alignBottom="@+id/buttonSortABC"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonRefresh"
+            android:onClick="activityrefresh"
+            android:src="@drawable/refresh"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+
+            />
+
+        <Button
+            android:layout_toRightOf="@+id/buttonRefresh"
+            android:layout_toEndOf="@+id/buttonRefresh"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:id="@+id/buttonSortABC"
+            android:onClick="activitysortABC"
+            />
+
+        <Button
+            android:layout_toRightOf="@+id/buttonSortABC"
+            android:layout_toEndOf="@+id/buttonSortABC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROST.M."
+            android:id="@+id/buttonSortZas"
+            android:onClick="activitysortZas"
+            />
+
+        <ImageButton
+            android:layout_toRightOf="@+id/buttonSortZas"
+            android:layout_toEndOf="@+id/buttonSortZas"
+            android:layout_alignTop="@+id/buttonSortABC"
+            android:layout_alignBottom="@+id/buttonSortABC"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSortRazd"
+            android:onClick="activitysortRazd"
+            android:src="@drawable/distance"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/firstrow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+
+</RelativeLayout>
